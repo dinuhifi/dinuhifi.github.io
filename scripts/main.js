@@ -18,6 +18,7 @@ app.addEventListener('click', function(e) {
 });
 
 async function terminal_startup() {
+    createText("Please Note: Work in progress. Some commands may not work as expected.");
     createText("Welcome to dinesh's Portfolio");
     await delay(1000);
     createText("Starting the server...");
