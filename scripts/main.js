@@ -99,7 +99,7 @@ async function getInputValue() {
 
         createCode("IntelliGrade: AI Powered Automatic Grading System built for teachers/educational institutions.", "Full Stack Application built using React, FastAPI, and Supabase. <a href='https://github.com/dinuhifi/IntelliGrade' target='_blank'>Github Repo</a>");
         createCode("CurioScope: An Interactive AI Educational Assistant", "A Streamlit based web application that provides personalized learning experiences using AI. <a href='https://github.com/dinuhifi/Curioscope-main' target='_blank'>Github Repo</a>");
-        createCode("Ping Pong AI: An AI powered ping pong simulation.", "A ping pong game simulated with 2 AI's playing against each other. Built with Python and Pygame, powered by reinforcement learning algorithms. <a href='https://github.com/dinuhifi/PingPongAI' target='_blank'>Github Repo</a>");
+        createCode("Ping Pong AI: An AI powered ping pong simulation.", "A ping pong game simulated with 2 AI's playing against each other. Built with Python and Pygame, powered by reinforcement learning algorithms. <a href='https://github.com/dinuhifi/ping-pong-ai' target='_blank'>Github Repo</a>");
         createCode("Terminal Portfolio", "This very website! Built with vanilla HTML, CSS and JavaScript. <a href='https://github.com/dinuhifi/dinuhifi.github.io' target='_blank'>Github Repo</a>");
         createText("For more details/projects, check out my <a href='https://github.com/dinuhifi' target='_blank'>GitHub</a>.");
 
