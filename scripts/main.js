@@ -4,7 +4,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 app.addEventListener('keypress', async function(e) {
     if(e.key === 'Enter') {
         await delay(150);
-        getInputValue();
+        await getInputValue();
 
         removeInput();
         await delay(150);
@@ -67,18 +67,59 @@ async function getInputValue() {
         createCode("help", "Show all available commands");
         createCode("clear", "Clear the terminal");
         createCode("about", "About me");
+        createCode("projects", "View my projects");
         createCode("contact", "Contact me");
+        createCode("resume", "View my resume");
+    }
+    else if(value === 'about') {
+        trueValue(value);
+        createText("Fetching Information...");
+        await delay(1000);
+
+        createCode("Name", "Dinesh Kumar CP");
+        createCode("Education", "B.Tech in Artificial Intelligence and Data Science");
+        createCode("Location", "Chennai, India");
+        createCode("Skills", "Python, Pandas, scikit-learn, tensorflow, JavaScript, HTML, CSS");
+        createCode("Interests", "AI, ML/DL, Data Science, Web Development");
+        createCode("Hobbies", "Coding, Cricket, Scrolling through social media");
+        createText("I love to explore new technologies and work on challenging projects. You're invited to explore this terminal as well — who knows what you'll discover along the way.");
+    }
+    else if(value === 'contact') {
+        trueValue(value);
+        createText("Fetching Information...");
+        await delay(1000);
+
+        // TODO: Stylize links and add functionality to open links in new tab
+        createCode("Email", "dinuhifi@gmail.com");
+        createCode("LinkedIn", "https://www.linkedin.com/in/dinesh-kumar-cp/");
+        createCode("GitHub", "https://github.com/dinuhifi");
     }
 
-
-    // Add more commands here
+    //TODO: Add projects and resume links
+    else if(value === 'projects') {
+        trueValue(value);
+        createText("Work in progress. Check back later for updates.");
+    }
+    else if(value === 'resume') {
+        trueValue(value);
+        createText("Work in progress. Check back later for updates.");
+    }
+    else if(value === 'pwd') {
+        trueValue(value);
+        createText("/home/dinuhifi");
+    }
+    else if(value === 'sudo rm -rf') {
+        trueValue(value);
+        createText("Ha! Nice try! Find the hidden password to unlock the privileges.");
+    }
+    
     else if(value === 'clear') {
         document.querySelectorAll('p').forEach(e => e.parentNode.removeChild(e));
         document.querySelectorAll('section').forEach(e => e.parentNode.removeChild(e));
     }
     else {
         falseValue(value);
-        createText(`Command '${value}' not found`);
+        createText(`Command '${value}' not found. Type 'help' to see all available commands`);
     }
 }
 
