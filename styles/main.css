@@ -150,6 +150,12 @@ span.text {
     color: white;
 }
 
+span.text a,
+p a {
+    color: #FFB86C;
+    text-decoration: underline;
+}
+
 p.path {
     color: #F7FCA0;
 }
